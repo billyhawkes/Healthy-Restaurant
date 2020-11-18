@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Nav Bar */
+
+header {
+	display: flex; 
+	justify-content: center;
+}
+
+header nav {
+	display: flex;
+	position: absolute;
+	margin-top: 1rem;
+	width: 30rem;
+	justify-content: space-around;
+	align-content: center;
+}
+
+header nav li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	font-size: 1.35rem;
+}
+header h1 {
+	text-align: center;
+}
+
+.logo {
+	width: 8rem;
+	height: 8rem;
+	color: white;
+}
+nav li h1 {
+	color:white;
+}
+
+header a {
+	color: #ddd;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Main section */
+
+main {
+	width: 100%;
+	height: 100vh;
+	color: #ddd;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("https://media.timeout.com/images/101402283/image.jpg") center;
+	background-size: cover;
+}
+
+.landing-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main h2 {
+	color: white;
+	font-size: 5.5rem;
+}
+
+/* About Section */
+
+#About {
+	display: flex;
+	width: 60vw;
+	margin: 8rem auto 14rem auto;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+#About .description  {
+	flex: 2;
+}
+#About .description p  {
+	margin-top: 1.5rem;
+	line-height: 1.5rem;
+}
+#About .details p, #About .details table {
+	margin-top: 1rem;
+}
+#About .details h3 {
+	margin-top: 1.5rem;
+}
+#About .description h2 {
+	margin-bottom: 4rem;
+}
+#About .details {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	margin-left: 5vw;
+}
+
+/* Google Map */
+
+#map {
+	min-width: 60vw;
+	height: 30vw;
+	flex: 3;
+	margin-top: 4rem;
+}
+
+/* Menu */
+#Menu {
+	width: 100%;
+	margin-top: 6rem;
+}
+#Menu h2 {
+	font-size: 3.5rem;
+	text-align: center;
+}
+#Menu .button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+	background-color: #ddd;
+	border: 1px solid #ccc;
+	width: 30%;
+	height: 3rem;
+	cursor: pointer;
+}
+#Menu .buttons {
+	display: flex;
+	justify-content: center;
+}
