@@ -33,6 +33,10 @@ header nav li {
 	list-style: none;
 	font-size: 1.35rem;
 }
+header nav li:nth-child(odd) a:hover {
+	transform: scale(1.05);
+	color: #eee;
+}
 header h1 {
 	text-align: center;
 }
@@ -47,6 +51,8 @@ nav li h1 {
 }
 
 header a {
+	width:7rem;
+	text-align: center;
 	color: #ddd;
 	font-weight: bold;
 	text-decoration: none;
@@ -78,12 +84,12 @@ main h2 {
 #About {
 	display: flex;
 	width: 60vw;
-	margin: 8rem auto 14rem auto;
+	margin: 6rem auto;
 	flex-wrap: wrap;
-	height: 100vh;
 }
 #About .description  {
 	flex: 2;
+	min-width: 30rem;
 }
 #About .description p  {
 	margin-top: 1.5rem;
@@ -100,6 +106,7 @@ main h2 {
 }
 #About .details {
 	flex: 1;
+	min-width: 15rem;
 	display: flex;
 	flex-direction: column;
 	margin-left: 5vw;
@@ -117,7 +124,7 @@ main h2 {
 /* Menu */
 #Menu {
 	width: 100%;
-	margin-top: 6rem;
+	margin-top: 4rem;
 }
 #Menu h2 {
 	font-size: 3.5rem;
@@ -158,20 +165,19 @@ main h2 {
 	margin-top: 3rem;
 	flex-wrap: wrap;
 	width: 100%;
+	font-size: 1.2rem;
 }	
 
 .item {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: column;
+	flex-wrap: wrap;
 	margin-top: 3rem;
 	width: 30%;
 }
 .price {
+	font-size: 1.1em;
 	color: orange;
-	position: relative;
-	bottom: 1.4rem;
-	left: 20vw;
 }
 #Menu h3 {
 	margin-top: 5rem;
@@ -179,6 +185,9 @@ main h2 {
 	font-size: 2rem;
 }
 .item p:last-child {	
+	width: 100%;
+	font-size: 0.9em;
+	margin-top: 1rem;
 	color: #444;
 }	
 
@@ -208,4 +217,87 @@ footer .links a {
 }
 footer .links a:hover {
 	color: orange;
+}
+
+@media only screen and (max-width: 1350px) {
+	main h2 {
+		text-align: center;
+		width: 40rem;
+	}
+	#About, #Food, #Smoothies {
+		width: 90%;
+		
+	}
+	#map {
+		height: 40vw;
+	}
+}
+
+@media only screen and (max-width: 865px) {
+	main h2 {
+		width: 90%;
+		font-size: 12vw;
+	}
+	#map {
+		height: 50vw;
+	}
+	#About .details {
+		margin: 0;
+		/* align-items: center; */
+	}
+	#Menu .button {
+		width: 40%;
+	}
+	.item {
+		width: 80%;
+	}
+	.items {
+		margin-top: 4vw;
+	}
+	footer a {
+		font-size: 2.8vw;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.logo {
+		width: 25vw;
+		height: 25vw;
+		color: white;
+	}
+	nav li h1 {
+		font-size: 1.8rem;
+		color:white;
+	}
+	header nav {
+		width: 90%;
+	}
+	
+	#About .description {
+		min-width: 90vw;
+	}
+	#About {
+		margin: 3rem auto;
+	}
+
+	#map {
+		height: 70vw;
+	}
+
+	#Menu {
+		margin-top: 2rem;
+	}
+	.links {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		height: 5rem;
+	}
+
+	footer a {
+		min-width: 30vw;
+		font-size: 5vw;
+	}
+	
+
 }
