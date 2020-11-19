@@ -21,4 +21,23 @@ const rows = Array.from(document.querySelectorAll('.details tr'));
 const curDay = rows.find(row => day == row.dataset.day);
 curDay.style.fontWeight = "600";
 
+// Menu button
+const buttons = Array.from(document.querySelectorAll('.button'));
+const food = document.querySelector('#Food');
+const smoothies = document.querySelector("#Smoothies");
 
+buttons.forEach(button => button.addEventListener('click', () => {
+  console.log(button);
+  if (button.dataset.key == 1) {
+    buttons[1].classList = 'button chosen';
+    buttons[0].classList = 'button';
+    food.style.display = 'none';
+    smoothies.style.display = 'block';
+  }
+  else {
+    buttons[0].classList = 'button chosen';
+    buttons[1].classList = 'button';
+    smoothies.style.display = 'none';
+    food.style.display = 'block';
+  }
+}));

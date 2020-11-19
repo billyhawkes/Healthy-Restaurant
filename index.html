@@ -5,6 +5,7 @@
 	<title>Fitty</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSbETsDycMoJE8LlbTGOVKXXjXrM6Xch4&callback=initMap">
 	</script>
@@ -74,10 +75,174 @@
 	<section id="Menu">
 		<h2>Menu</h2>
 		<div class="buttons">
-			<div class="button">Food</div>
-			<div class="button">Smoothies</div>
+			<div class="button chosen" data-key="0">Food</div>
+			<div class="button" data-key="1">Smoothies</div>
+		</div>
+		<div id="Food">
+			<div class="type">
+				<h3>Appetizers</h3>
+				<div class="items">
+					<div class="item">
+						<h4>Chicken Lettuce Wraps</h4><p class="price">12</p>
+						<p>chicken and lettuce</p>
+					</div>
+					<div class="item">
+						<h4>Guac and Chips</h4><p class="price">12</p>
+						<p>guacamole and chips</p>
+					</div>
+					<div class="item">
+						<h4>Bruschetta</h4><p class="price">12</p>
+						<p>whole wheat bread, tomatos, cheese, and lettuce</p>
+					</div>
+					<div class="item">
+						<h4>Vegetable Dip</h4><p class="price">12</p>
+						<p>celery, tomatos, carrots and vegetable dip</p>
+					</div>
+				</div>
+			</div>
+			<div class="type">
+				<h3>Salads</h3>
+				<div class="items">
+					<div class="item">
+						<h4>Chicken Salad</h4><p class="price">12</p>
+						<p>chicken, lettuce</p>
+					</div>
+					<div class="item">
+						<h4>Kale Salad</h4><p class="price">12</p>
+						<p>Adipisicing elit voluptatum elit quam!</p>
+					</div>
+					<div class="item">
+						<h4>Ceasar Salad</h4><p class="price">12</p>
+						<p>Amet debitis suscipit perferendis.</p>
+					</div>
+				</div>
+			</div>
+			<div class="type">
+				<h3>Burritos/Bowls</h3>
+				<div class="items">
+					<div class="item">
+						<h4>Tinga Chicken</h4><p class="price">12</p>
+						<p>Consectetur corrupti autem repudiandae ducimus amet</p>
+					</div>
+					<div class="item">
+						<h4>Beef</h4><p class="price">12</p>
+						<p>Elit totam optio nisi ad atque</p>
+					</div>
+					<div class="item">
+						<h4>Vegetable</h4><p class="price">12</p>
+						<p>Dolor quod accusamus similique alias unde. Dolores.</p>
+					</div>
+					<div class="item">
+						<h4>Fish</h4><p class="price">12</p>
+						<p>Ipsum neque dolor blanditiis incidunt voluptates?</p>
+					</div>
+				</div>
+			</div>
+			<div class="type">
+				<h3>Mains</h3>
+				<div class="items">
+					<div class="item">
+						<h4>Steak</h4><p class="price">12</p>
+						<p>Sit voluptatem autem aperiam repellat.</p>
+					</div>
+					<div class="item">
+						<h4>Chicken Burger</h4><p class="price">12</p>
+						<p>Ipsum illo totam aspernatur eaque porro. Ipsa</p>
+					</div>
+					<div class="item">
+						<h4>Chicken Noodles</h4><p class="price">12</p>
+						<p>Consectetur nihil quod ipsam voluptas numquam nam tenetur</p>
+					</div>
+					<div class="item">
+						<h4>Impossible Burger</h4><p class="price">12</p>
+						<p>Amet tenetur reiciendis impedit porro eaque</p>
+					</div>
+					<div class="item">
+						<h4>Pasta</h4><p class="price">12</p>
+						<p>Amet tenetur porro eaque Elit fugiat?</p>
+					</div>
+				</div>
+			</div>
+			<div class="type">
+				<h3>Dessert</h3>
+				<div class="items">
+					<div class="item">
+						<h4>Fruit Bowl</h4><p class="price">12</p>
+						<p>Dolor commodi officia fuga dolorem laborum earum. Quas!</p>
+					</div>
+					<div class="item">
+						<h4>Oatmeal Cookies</h4><p class="price">12</p>
+						<p>Amet ullam eius voluptas rem repellat voluptatem!</p>
+					</div>
+					<div class="item">
+						<h4>Blueberry Cheese Cake</h4><p class="price">12</p>
+						<p>Consectetur voluptatibus nobis laudantium laudantium minima vel Perspiciatis?</p>
+					</div>
+					<div class="item">
+						<h4>Raspberry Pie</h4><p class="price">12</p>
+						<p>Consectetur aliquid quam consectetur doloremque rem.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Smoothies">	
+			<div class="type">
+				<h3>Classics</h3>
+				<div class="items">
+					<div class="item">
+						<h4>Green</h4><p class="price">12</p>
+						<p>Sit voluptatem autem aperiam repellat.</p>
+					</div>
+					<div class="item">
+						<h4>Mango Boost</h4><p class="price">12</p>
+						<p>Ipsum illo totam aspernatur eaque porro. Ipsa</p>
+					</div>
+					<div class="item">
+						<h4>Berry Blast</h4><p class="price">12</p>
+						<p>Consectetur nihil quod ipsam voluptas numquam nam tenetur</p>
+					</div>
+					<div class="item">
+						<h4>Banana Fusion</h4><p class="price">12</p>
+						<p>Amet tenetur reiciendis impedit porro eaque</p>
+					</div>
+					<div class="item">
+						<h4>Nuttin' Better</h4><p class="price">12</p>
+						<p>Amet tenetur porro eaque Elit fugiat?</p>
+					</div>
+				</div>
+			</div>
+			<div class="type">
+				<h3>Protein</h3>
+				<div class="items">
+					<div class="item">
+						<h4>Bananas-A-Whey</h4><p class="price">12</p>
+						<p>Dolor commodi officia fuga dolorem laborum earum. Quas!</p>
+					</div>
+					<div class="item">
+						<h4>Mango Fit</h4><p class="price">12</p>
+						<p>Amet ullam eius voluptas rem repellat voluptatem!</p>
+					</div>
+					<div class="item">
+						<h4>Berry Big</h4><p class="price">12</p>
+						<p>Consectetur voluptatibus nobis laudantium laudantium minima vel Perspiciatis?</p>
+					</div>
+					<div class="item">
+						<h4>Nuttin' Fitter</h4><p class="price">12</p>
+						<p>Consectetur aliquid quam consectetur doloremque rem.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
+	<footer>
+		<div class="links">
+			<a href="#">Contact Us</a>
+			<a href="#">Terms of use</a>
+			<a href="#">Privacy</a>
+			<a href="#">Health Measures</a>
+		</div>
+		<p>© 2020. Fitty Restaurant. All rights reserved.</p>
+	</footer>
 	<script src="app.js"></script>
 </body>
 </html>

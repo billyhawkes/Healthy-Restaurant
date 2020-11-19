@@ -4,8 +4,10 @@
 	padding: 0;
 }
 
-body {
+body, html {
 	font-family: 'Raleway', sans-serif;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 /* Nav Bar */
@@ -131,8 +133,79 @@ main h2 {
 	width: 30%;
 	height: 3rem;
 	cursor: pointer;
+	font-size: 1.1rem;
 }
 #Menu .buttons {
 	display: flex;
 	justify-content: center;
+}
+#Menu .button.chosen {
+	font-weight:bold;
+	background-color: white;
+}
+
+#Food, #Smoothies {
+	width: 70vw;
+	margin: auto;
+}
+#Smoothies {
+	display: none;
+}
+
+.items {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 3rem;
+	flex-wrap: wrap;
+	width: 100%;
+}	
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-top: 3rem;
+	width: 30%;
+}
+.price {
+	color: orange;
+	position: relative;
+	bottom: 1.4rem;
+	left: 20vw;
+}
+#Menu h3 {
+	margin-top: 5rem;
+	text-align: center;
+	font-size: 2rem;
+}
+.item p:last-child {	
+	color: #444;
+}	
+
+/* footer */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 4rem;
+	color: white;
+	height: 10rem;
+	background-color: #555;
+}
+footer>* {
+	margin-left: 2rem;
+	color: #ccc;
+}
+footer .links {
+	margin-top: 2rem;
+}
+footer .links a {
+	text-decoration: none;
+	color: white;
+	margin-right: 2rem;
+	transition: color 0.2s linear;
+}
+footer .links a:hover {
+	color: orange;
 }
